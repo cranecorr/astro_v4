@@ -66,6 +66,12 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>b"] = { desc = "Buffers" },
+        -- Hop mapping
+        ["<Leader>j"] = { desc = "Hops" },
+        ["<Leader>jw"] = { "<cmd>lua require'hop'.hint_words()<cr>", desc = "Hop Words" },
+        ["<Leader>jl"] = { "<cmd>lua require'hop'.hint_lines()<cr>", desc = "Hop Line" },
+        ["<Leader>jc"] = { "<cmd>lua require'hop'.hint_char1()<cr>", desc = "Hop Char" },
+        -- Hop mapping
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
       },

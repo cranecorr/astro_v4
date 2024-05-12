@@ -14,6 +14,11 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
+  {
+    "phaazon/hop.nvim",
+    branch = "v2",
+    config = function() require("hop").setup {} end,
+  },
 
   -- == Examples of Overriding Plugins ==
 
