@@ -35,7 +35,7 @@ return {
         background = "dark",
       },
       g = { -- vim.g.<key>
-        gruvbox_baby_background_color = "hard",
+        gruvbox_baby_background_color = "dark",
         gruvbox_baby_transparent_mode = 0,
         gruvbox_baby_telescope_theme = 1,
         -- configure global vim variables (vim.g)
@@ -68,6 +68,9 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+      },
+      v = {
+        ["<M-Insert>"] = { '"*y :let @+=@*<CR>', desc = "Copy to system buffer" },
       },
       t = {
         -- setting a mapping to false will disable it
