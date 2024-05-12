@@ -71,6 +71,9 @@ return {
         ["<Leader>jw"] = { "<cmd>lua require'hop'.hint_words()<cr>", desc = "Hop Words" },
         ["<Leader>jl"] = { "<cmd>lua require'hop'.hint_lines()<cr>", desc = "Hop Line" },
         ["<Leader>jc"] = { "<cmd>lua require'hop'.hint_char1()<cr>", desc = "Hop Char" },
+        -- Run python script int terminal
+        ["<Leader>rt"] = { ":term python %<cr>", desc = "Запустить Питона" },
+        --
         -- Hop mapping
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
