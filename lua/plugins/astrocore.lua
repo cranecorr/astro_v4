@@ -72,7 +72,7 @@ return {
         ["<Leader>jl"] = { "<cmd>lua require'hop'.hint_lines()<cr>", desc = "Hop Line" },
         ["<Leader>jc"] = { "<cmd>lua require'hop'.hint_char1()<cr>", desc = "Hop Char" },
         -- Run python script int terminal
-        ["<Leader>rt"] = { ":term python %<cr>", desc = "Запустить Питона" },
+        ["<Leader>rt"] = { ":term python '%'<cr>", desc = "Запустить Питона" },
         --
         -- Hop mapping
         -- quick save
