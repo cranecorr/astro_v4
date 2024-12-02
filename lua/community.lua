@@ -11,4 +11,5 @@ return {
   -- import/override with your plugins folder
   -- { import = "astrocommunity.colorscheme.gruvbox-nvim" },
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
+  { import = "astrocommunity.pack.html-css" },
 }
